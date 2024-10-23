@@ -5,3 +5,10 @@ for (i in arr) {
   }
   console.log(`${arr[i]}`); // 5. 23
 }
+
+for (i in arr) {
+  if (typeof arr[i] == "string") {
+    continue;
+  }
+  console.log(`${arr[i]}`);
+}
